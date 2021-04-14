@@ -58,8 +58,8 @@ arq = ARQ(ARQ_API)
 
 
 # @app.on_message(filters.command("start") & filters.chat(sudo_chat_id))
-async def start(_, message):
-    await send(START_TEXT)
+# async def start(_, message):
+   # await send(START_TEXT)
 
 
 @app.on_message(filters.command("help") & filters.chat(sudo_chat_id))
