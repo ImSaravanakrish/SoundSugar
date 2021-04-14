@@ -57,7 +57,7 @@ vc = GroupCall(app, input_filename="input.raw", play_on_repeat=True)
 arq = ARQ(ARQ_API)
 
 
-@app.on_message(filters.command("start") & filters.chat(sudo_chat_id))
+# @app.on_message(filters.command("start") & filters.chat(sudo_chat_id))
 async def start(_, message):
     await send(START_TEXT)
 
